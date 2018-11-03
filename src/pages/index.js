@@ -1,19 +1,15 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout from '../components/layout'
-import Image from '../components/image'
+import Layout from "../components/layout";
 
-const IndexPage = () => (
+const Index = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h1>Home Page</h1>
+    <Link to="/about/">About</Link>
+    <Link to="/contact/">Contact</Link>
+    <Link to="/blog/">Blog</Link>
   </Layout>
-)
+);
 
-export default IndexPage
+export default Index;
