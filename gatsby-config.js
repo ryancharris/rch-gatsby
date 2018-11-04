@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Ryan C. Harris",
     siteUrl: "https://www.ryancharris.com",
-    description: "Frontend software engineer and developer in Philadelphia, PA",
+    description: "Frontend software engineer and developer in Philadelphia, PA"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
