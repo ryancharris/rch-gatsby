@@ -1,0 +1,12 @@
+@import "colors";
+
+.Layout {
+  background: $pink;
+  height: 100vh;
+  padding: 25px 25px 35px;
+
+  &__content {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}

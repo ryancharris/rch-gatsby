@@ -5,7 +5,7 @@ import LinkedInIcon from "!svg-react-loader!../images/linkedin.svg?name=LinkedIn
 import TwitterIcon from "!svg-react-loader!../images/twitter.svg?name=TwitterIcon";
 import VimeoIcon from "!svg-react-loader!../images/vimeo.svg?name=VimeoIcon";
 
-import "../css/Socialicons.css";
+import "../scss/Socialicons.scss";
 
 class SocialIcons extends Component {
   render() {
