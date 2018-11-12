@@ -10,9 +10,22 @@ import "../scss/normalize.css";
 import "../scss/Layout.scss";
 
 class Layout extends Component {
+  createHeroSubtitle = (path) => {
+    switch (path) {
+      case "/":
+        return "hi."
+      case "/blog/":
+        return "blog."
+      case "/portfolio/":
+        return "work."
+      default:
+        break;
+    }
+  }
+
   render() {
-    const { children } = this.props;
-    console.log(this.props);
+    const { children, location } = this.props;
+    const heroSubtitle = this.createHeroSubtitle(location.pathname);
 
     return (
       <Fragment>
@@ -43,7 +56,7 @@ class Layout extends Component {
               <Nav />
             </section>
             <section className="Layout__hero">
-              <HeroBlock title="Ryan C. Harris" subtitle="subtitle goes here." />
+              <HeroBlock title="Ryan C. Harris" subtitle={heroSubtitle} />
             </section>
             <section className="Layout__body">
               {children}
