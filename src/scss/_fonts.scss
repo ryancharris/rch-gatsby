@@ -1,4 +1,21 @@
-@mixin font-14-bold {
+@mixin font-36-bold($color) {
+  color: $color;
+  font-family: "Futura", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+
+}
+
+@mixin font-28-bold($color) {
+  color: $color;
+  font-family: "Futura", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+@mixin font-14-bold($color) {
+  color: $color;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;

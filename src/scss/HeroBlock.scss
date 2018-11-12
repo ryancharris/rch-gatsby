@@ -1,0 +1,19 @@
+@import "colors";
+@import "fonts";
+
+.HeroBlock {
+  margin: 65px 0;
+  text-align: center;
+  text-shadow: 1px 3px 5px $text-shadow;
+
+  &__title {
+    @include font-36-bold($white);
+    letter-spacing: -5%;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    @include font-28-bold($black);
+    margin-top: 0px;
+  ;}
+}
