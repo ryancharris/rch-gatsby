@@ -3,7 +3,7 @@ import React, {Component} from "react";
 import GithubIcon from "!svg-react-loader!../images/github.svg?name=GithubIcon";
 import LinkedInIcon from "!svg-react-loader!../images/linkedin.svg?name=LinkedInIcon";
 import TwitterIcon from "!svg-react-loader!../images/twitter.svg?name=TwitterIcon";
-import VimeoIcon from "!svg-react-loader!../images/vimeo.svg?name=VimeoIcon";
+// import VimeoIcon from "!svg-react-loader!../images/vimeo.svg?name=VimeoIcon";
 
 import "../scss/Socialicons.scss";
 
@@ -26,11 +26,11 @@ class SocialIcons extends Component {
           <TwitterIcon className="SocialIcons__icon"/>
           </a>
         </li>
-        <li className="SocialIcons__list-item">
+        {/* <li className="SocialIcons__list-item">
           <a className="SocialIcons__link" href="http://www.vimeo.com/ryancharris/">
           <VimeoIcon className="SocialIcons__icon"/>
           </a>
-        </li>
+        </li> */}
       </ul>
     )
   }

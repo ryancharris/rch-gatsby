@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import SocialIcons from "../components/SocialIcons";
 import Layout from "../components/layout";
 
 class Index extends Component {
@@ -8,7 +7,6 @@ class Index extends Component {
     return (
       <Layout location={this.props.location}>
         <h1>Home Page</h1>
-        <SocialIcons />
       </Layout>
     );
   }

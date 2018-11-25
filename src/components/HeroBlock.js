@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import "../scss/HeroBlock.scss";
 
-
 class HeroBlock extends Component {
   render() {
     const {title, subtitle} = this.props;

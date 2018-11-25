@@ -3,8 +3,10 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
+import ContentCard from "./ContentCard";
 import HeroBlock from "./HeroBlock";
 import Nav from "./Nav";
+import SocialIcons from "./SocialIcons";
 
 import "../scss/normalize.css";
 import "../scss/Layout.scss";
@@ -59,7 +61,10 @@ class Layout extends Component {
               <HeroBlock title="Ryan C. Harris" subtitle={heroSubtitle} />
             </section>
             <section className="Layout__body">
-              {children}
+              <SocialIcons />
+              <ContentCard>
+                {children}
+              </ContentCard>
             </section>
           </div>
         </main>
