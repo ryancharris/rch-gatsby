@@ -11,7 +11,20 @@
   font-family: "Futura", sans-serif;
   font-size: 28px;
   font-weight: bold;
+}
 
+@mixin font-18-bold($color) {
+  color: $color;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@mixin font-14($color) {
+  color: $color;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 @mixin font-14-bold($color) {

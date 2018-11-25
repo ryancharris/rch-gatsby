@@ -1,0 +1,31 @@
+@import "colors";
+@import "fonts";
+
+.page {
+  &__section-header {
+    @include font-18-bold($black);
+  }
+
+  &__paragraph {
+    @include font-14($black);
+  }
+
+  &__line {
+    border: none;
+    height: 2px;
+    margin: 30px auto;
+    max-width: 125px;
+
+    &--index {
+      background-color: $pink;
+    }
+
+    &--blog {
+      background-color: $aqua;
+    }
+
+    &--portfolio {
+      background-color: $yellow;
+    }
+  }
+}
