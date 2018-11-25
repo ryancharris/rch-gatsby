@@ -1,8 +1,10 @@
+@import "colors";
+
 .SocialIcons__list {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
   padding: 0;
 }
 
@@ -11,5 +13,6 @@
 }
 
 .SocialIcons__icon {
+  fill: $white;
   width: 20px;
 }
