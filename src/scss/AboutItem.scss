@@ -1,0 +1,44 @@
+@import "colors";
+@import "fonts";
+
+.AboutItem {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  &__logo-wrapper {
+    padding: 0 20px;
+    width: 15%;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__info {
+    padding: 0 10px 0;
+    width: 85%;
+  }
+
+  &__info-header {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 8px 0;
+  }
+
+  &__date {
+    @include font-14($black);
+  }
+
+  &__description {
+    @include font-14($black);
+    margin: 0;
+  }
+
+  &__title {
+    @include font-18-bold($black);
+    margin: 0;
+  }
+}

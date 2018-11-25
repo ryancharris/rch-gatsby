@@ -6,7 +6,7 @@ import { StaticQuery, graphql } from "gatsby";
 import ContentCard from "./ContentCard";
 import HeroBlock from "./HeroBlock";
 import Nav from "./Nav";
-import SocialIcons from "./SocialIcons";
+// import SocialIcons from "./SocialIcons";
 
 import "../scss/normalize.css";
 import "../scss/Layout.scss";
@@ -71,12 +71,12 @@ class Layout extends Component {
             <section className="Layout__nav">
               <Nav />
             </section>
-            <section className="Layout__hero">
-              <HeroBlock title="Ryan C. Harris" subtitle={heroSubtitle} />
-            </section>
             <section className="Layout__body">
-              <SocialIcons />
+              {/* <SocialIcons /> */}
               <ContentCard>
+            <section className="Layout__hero">
+              <HeroBlock location={location} title="Ryan C. Harris" subtitle={heroSubtitle} />
+            </section>
                 {children}
               </ContentCard>
             </section>

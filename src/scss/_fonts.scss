@@ -13,6 +13,13 @@
   font-weight: bold;
 }
 
+@mixin font-18($color) {
+  color: $color;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
 @mixin font-18-bold($color) {
   color: $color;
   font-family: 'Helvetica', sans-serif;

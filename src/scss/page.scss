@@ -2,6 +2,10 @@
 @import "fonts";
 
 .page {
+  &__section {
+    padding: 0 10px;
+  }
+
   &__section-header {
     @include font-18-bold($black);
   }
@@ -13,7 +17,7 @@
   &__line {
     border: none;
     height: 2px;
-    margin: 30px auto;
+    margin: 40px auto;
     max-width: 125px;
 
     &--index {
