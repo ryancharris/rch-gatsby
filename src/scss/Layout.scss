@@ -1,9 +1,21 @@
 @import "colors";
 
 .Layout {
-  background: $pink;
   height: 100vh;
   padding: 25px 25px 35px;
+
+  &--index {
+    background: $pink;
+
+  }
+
+  &--blog {
+    background: $yellow;
+  }
+
+  &--portfolio {
+    background: $aqua;
+  }
 
   &__content {
     margin: 0 auto;

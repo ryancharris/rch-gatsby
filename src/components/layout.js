@@ -25,9 +25,23 @@ class Layout extends Component {
     }
   }
 
+  createLayoutClassName = (path) => {
+    switch (path) {
+      case "/":
+        return "Layout--index"
+      case "/blog/":
+        return "Layout--blog"
+      case "/portfolio/":
+        return "Layout--portfolio"
+      default:
+        break;
+    }
+  }
+
   render() {
     const { children, location } = this.props;
     const heroSubtitle = this.createHeroSubtitle(location.pathname);
+    const layoutClass = `Layout ${this.createLayoutClassName(location.pathname)}`;
 
     return (
       <Fragment>
@@ -52,7 +66,7 @@ class Layout extends Component {
           )}
         />
 
-        <main className="Layout">
+        <main className={layoutClass}>
           <div className="Layout__content">
             <section className="Layout__nav">
               <Nav />
