@@ -19,7 +19,11 @@
     border: 4px solid $black;
     border-radius: 50%;
     display: block;
-    margin: 15px auto 30px;
+    margin: 15px auto 10px;
     max-width: 175px;
+  }
+
+  .SocialIcons__icon {
+    fill: $black;
   }
 }

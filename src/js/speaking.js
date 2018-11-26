@@ -6,7 +6,7 @@ export const speakingExperience = [
   {
     type: SpeakingTypes.LIBERTY_JS,
     date: "Nov. 2018",
-    description: `Co-lead "Building a Blog with Gatsby" workshop at LibertyJS 2018 in Philadelphia, PA.`,
+    description: `"Building a Blog with Gatsby" (Co-Speaker)`,
     title: "Liberty JS"
   }
 ];

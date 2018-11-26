@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 
-import "../scss/Footer.scss";
 import SocialIcons from "./SocialIcons";
+
+import "../scss/Footer.scss";
 
 class Footer extends Component {
   render() {

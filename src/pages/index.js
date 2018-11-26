@@ -14,6 +14,7 @@ class Index extends Component {
     return volunteerExperience.map(item => {
       return (
         <AboutItem
+          key={`${item.type}-${item.date}`}
           date={item.date}
           description={item.description}
           title={item.title}
@@ -27,6 +28,7 @@ class Index extends Component {
     return speakingExperience.map(item => {
       return (
         <AboutItem
+          key={`${item.type}-${item.date}`}
           date={item.date}
           description={item.description}
           title={item.title}
