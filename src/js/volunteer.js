@@ -8,19 +8,19 @@ export const VolunteerTypes = {
 export const volunteerExperience = [
   {
     type: VolunteerTypes.GIRL_DEVELOP_IT,
-    date: "October 2018",
+    date: "Oct. 2018",
     description: "Teaching Assistant",
     title: "Girl Develop It"
   },
   {
     type: VolunteerTypes.GIRL_DEVELOP_IT,
-    date: "June 2018",
+    date: "Jun. 2018",
     description: "Teaching Assistant",
     title: "Girl Develop It"
   },
   {
     type: VolunteerTypes.TECH_GIRLZ,
-    date: "June 2017",
+    date: "Jun. 2017",
     description: "Teaching Assistant",
     title: "TechGirlz"
   },
@@ -32,13 +32,13 @@ export const volunteerExperience = [
   },
   {
     type: VolunteerTypes.RAILS_BRIDGE,
-    date: "December 2016",
+    date: "Dec. 2016",
     description: "Teaching Assistant",
     title: "RailsBridge"
   },
   {
     type: VolunteerTypes.RAILS_BRIDGE,
-    date: "September 2016",
+    date: "Sept. 2016",
     description: "Teaching Assistant",
     title: "RailsBridge"
   }

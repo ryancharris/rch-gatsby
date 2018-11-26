@@ -40,3 +40,10 @@
   font-size: 14px;
   font-weight: bold;
 }
+
+@mixin font-12($color) {
+  color: $color;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}

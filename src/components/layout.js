@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
 import ContentCard from "./ContentCard";
+import Footer from "./Footer";
 import HeroBlock from "./HeroBlock";
 import Nav from "./Nav";
 // import SocialIcons from "./SocialIcons";
@@ -68,18 +69,19 @@ class Layout extends Component {
 
         <main className={layoutClass}>
           <div className="Layout__content">
-            <section className="Layout__nav">
+            <header className="Layout__nav">
               <Nav />
-            </section>
+            </header>
             <section className="Layout__body">
               {/* <SocialIcons /> */}
               <ContentCard>
-            <section className="Layout__hero">
-              <HeroBlock location={location} title="Ryan C. Harris" subtitle={heroSubtitle} />
-            </section>
+                <section className="Layout__hero">
+                  <HeroBlock location={location} title="Ryan C. Harris" subtitle={heroSubtitle} />
+                </section>
                 {children}
               </ContentCard>
             </section>
+            <Footer />
           </div>
         </main>
       </Fragment>

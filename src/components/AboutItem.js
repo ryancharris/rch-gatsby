@@ -14,8 +14,6 @@ import techGirlz from "../images/tech-girlz.png";
 class AboutItem extends Component {
   getLogo = () => {
     const { type } = this.props;
-    console.log(type);
-    console.log(type === SpeakingTypes.type);
 
     switch (type) {
       case SpeakingTypes.LIBERTY_JS:
