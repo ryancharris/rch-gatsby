@@ -1,26 +1,29 @@
 export const portfolioPieces = [
   {
-    title: "Project 1",
+    title: "Gritty's Blog",
     description:
-      "Vestibulum ut metus lobortis, efficitur massa vel, mattis nisi. Maecenas maximus quam accumsan, vehicula erat vel, tempor sapien. Etiam lobortis, justo sit amet aliquet efficitur, augue leo aliquet magna, vitae dapibus nisi augue a augue.",
+      "Made with Gatsby, this blog featuring the Philadelphia Flyers' mascot Gritty was used for demonstration purposes during my 2018 LibertyJS talk with Ivana Veliskova.",
     image: "",
+    link: "https://github.com/ryancharris/blog-setup",
   },
   {
-    title: "Project 2",
-    description:
-      "Praesent volutpat congue varius. Nunc rhoncus mauris libero, ac tristique tellus laoreet ac. Donec consectetur sit amet neque nec luctus.",
+    title: "Who",
+    description: `While working at RevZilla in 2017, I rebuilt my React application "Who Speaks for Us?" in Elixir/Phoenix as a learning exercise in order to get familiar with RZ's backend stack`,
     image: "",
+    link: "https://github.com/ryancharris/who",
   },
   {
-    title: "Project 3",
+    title: "Tic Tac Toe",
     description:
-      "Nam a hendrerit massa. Mauris sit amet nisi fringilla, tincidunt dui nec, pulvinar diam. Cras aliquam at tortor vel varius.",
+      "This iteration of the classic game Tic-Tac-Toe was built using vanilla JavaScript as part of a job interview process.",
     image: "",
+    link: "https://github.com/ryancharris/tic-tac-toe",
   },
   {
-    title: "Project 4",
+    title: "Who Speaks for Us?",
     description:
-      "Sed sodales rutrum orci eu euismod. Curabitur laoreet gravida lorem gravida eleifend. Integer vitae convallis ante, a molestie neque.",
+      "As my first foray into React, I built this application using the Sunlight Foundation's now-defunct API to let users look up information about their congressional respresetnatives.",
     image: "",
+    link: "https://github.com/ryancharris/who-speaks-for-us",
   },
 ];

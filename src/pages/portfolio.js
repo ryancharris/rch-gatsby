@@ -20,6 +20,7 @@ class Portfolio extends Component {
           title={piece.title}
           description={piece.description}
           lastItem={lastItem}
+          link={piece.link}
         />
       );
     });
