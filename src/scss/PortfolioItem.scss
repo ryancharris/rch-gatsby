@@ -1,5 +1,8 @@
+@import "colors";
+@import "fonts";
+
 .PortfolioItem {
-  align-items: center;
+  align-items: stretch;
   display: flex;
   flex-direction: row;
 
@@ -8,8 +11,18 @@
     margin: 0;
   }
 
+  .PortfolioItem__title {
+    @include font-18-bold($black);
+    margin: 0 0 10px 0;
+  }
+
+  .PortfolioItem__description {
+    @include font-12($black);
+  }
+
   .PortfolioItem__img-wrapper {
-    width: 28%;
+    background: rebeccapurple;
+    width: 20%;
   }
 
   .PortfolioItem__img {
@@ -17,6 +30,7 @@
   }
 
   .PortfolioItem__content {
-    width: 95%;
+    padding: 20px;
+    width: 100%;
   }
 }

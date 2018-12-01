@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import PropTypes from "prop-types";
 
 import railsBridge from "../images/rails-bridge.png";
 
@@ -9,18 +10,24 @@ function PortfolioItem(props) {
     <Fragment>
       <div className="PortfolioItem">
         <div className="PortfolioItem__img-wrapper">
-          {/* TODO: Render item specific thumbnail */}
           <img className="PortfolioItem__img" src={railsBridge} alt="" />
         </div>
         <div className="PortfolioItem__content">
           <h2 className="PortfolioItem__title">{props.title}</h2>
           <p className="PortfolioItem__description">{props.description}</p>
-          {/* TODO: Conditionally render this for all except the last item */}
+          <p>{`${props.lastItem}`}</p>
         </div>
       </div>
-      <hr className="page__line page__line--portfolio" />
+      {!props.lastItem && <hr className="page__line page__line--portfolio" />}
     </Fragment>
   );
 }
 
 export default PortfolioItem;
+
+PortfolioItem.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  lastItem: PropTypes.bool.isRequired,
+};
