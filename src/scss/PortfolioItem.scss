@@ -1,0 +1,22 @@
+.PortfolioItem {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  .PortfolioItem__title,
+  .PortfolioItem__description {
+    margin: 0;
+  }
+
+  .PortfolioItem__img-wrapper {
+    width: 28%;
+  }
+
+  .PortfolioItem__img {
+    width: 100%;
+  }
+
+  .PortfolioItem__content {
+    width: 95%;
+  }
+}
