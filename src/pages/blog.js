@@ -6,9 +6,8 @@ import Layout from "../components/layout";
 class Blog extends Component {
   createPostItems = () => {
     const blogPostQueryData = this.props.data.allMarkdownRemark.edges;
-    console.log(blogPostQueryData);
 
-    const blogPosts = blogPostQueryData.map(post => {
+    return blogPostQueryData.map(post => {
       return (
         <article key={post.node.id}>
           <h4>{post.node.frontmatter.title}</h4>
@@ -17,8 +16,6 @@ class Blog extends Component {
         </article>
       );
     });
-
-    return blogPosts;
   };
 
   render() {
@@ -32,7 +29,7 @@ export default Blog;
 
 export const query = graphql`
   {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           id
