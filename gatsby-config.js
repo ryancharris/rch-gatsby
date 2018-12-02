@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Ryan C. Harris",
     siteUrl: "https://www.ryancharris.com",
-    description: "Frontend software engineer and developer in Philadelphia, PA"
+    description: "Frontend software engineer and developer in Philadelphia, PA",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -15,10 +15,11 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
+    "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
@@ -35,12 +36,12 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
-          rule: {
-            include: "/images/svg/"
-          }
-      }
-    }
+        rule: {
+          include: "/images/svg/",
+        },
+      },
+    },
   ],
 };
