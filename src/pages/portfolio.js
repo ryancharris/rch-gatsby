@@ -8,8 +8,6 @@ import { portfolioPieces } from "../js/portfolio";
 class Portfolio extends Component {
   createPortfolioItems = () => {
     return portfolioPieces.map(piece => {
-      // console.log(portfolioPieces.indexOf(piece));
-      // console.log(portfolioPieces.length);
       const lastItem = Boolean(
         portfolioPieces.indexOf(piece) === portfolioPieces.length - 1
       );

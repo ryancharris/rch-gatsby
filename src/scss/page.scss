@@ -8,6 +8,7 @@
 
   &__section-header {
     @include font-18-bold($black);
+    margin-top: 0;
   }
 
   &__paragraph {

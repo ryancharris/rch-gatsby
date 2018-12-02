@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
-import railsBridge from "../images/rails-bridge.png";
-
 import "../scss/PortfolioItem.scss";
 
 function PortfolioItem(props) {
@@ -11,7 +9,8 @@ function PortfolioItem(props) {
       <a href={props.link} className="PortfolioItem__link">
         <div className="PortfolioItem">
           <div className="PortfolioItem__img-wrapper">
-            <img className="PortfolioItem__img" src={railsBridge} alt="" />
+            {/* TODO: Wire up actual images for each project */}
+            {/* <img className="PortfolioItem__img" src={} alt="" /> */}
           </div>
           <div className="PortfolioItem__content">
             <h2 className="PortfolioItem__title">{props.title}</h2>

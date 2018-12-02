@@ -8,7 +8,7 @@ export const portfolioPieces = [
   },
   {
     title: "Who",
-    description: `While working at RevZilla in 2017, I rebuilt my React application "Who Speaks for Us?" in Elixir/Phoenix as a learning exercise in order to get familiar with RZ's backend stack`,
+    description: `While working at RevZilla in 2017, I rebuilt my React application "Who Speaks for Us?" in Elixir/Phoenix as a learning exercise in order to get familiar with RZ's backend stack.`,
     image: "",
     link: "https://github.com/ryancharris/who",
   },
