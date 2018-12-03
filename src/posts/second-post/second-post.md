@@ -1,6 +1,8 @@
 ---
 title: "Stuff that happens on the table"
 date: "2016-10-19"
+attachments:
+  - "./code.jpg"
 ---
 
 Aliquam erat volutpat. Integer fermentum risus vulputate turpis semper iaculis nec vitae ipsum. Maecenas malesuada egestas lacus ut dapibus. Sed interdum leo id elit porttitor pellentesque. Pellentesque tempus arcu dapibus porta tincidunt. Praesent porta urna in interdum bibendum. Praesent eu molestie ligula. Aenean sit amet pretium ipsum. Ut in ultricies nisl. Nunc at mauris ligula.

@@ -24,6 +24,11 @@
 
     blockquote {
       @include font-24-bold-oblique($black);
+      margin: 30px 5%;
+    }
+
+    .gatsby-resp-image-wrapper {
+      margin-bottom: 30px;
     }
   }
 }
