@@ -13,36 +13,38 @@ import "../scss/normalize.css";
 import "../scss/Layout.scss";
 
 class Layout extends Component {
-  createHeroSubtitle = (path) => {
+  createHeroSubtitle = path => {
     switch (path) {
       case "/":
-        return "hi."
+        return "hi.";
       case "/blog/":
-        return "blog."
+        return "blog.";
       case "/portfolio/":
-        return "work."
+        return "work.";
       default:
-        break;
+        return null;
     }
-  }
+  };
 
-  createLayoutClassName = (path) => {
+  createLayoutClassName = path => {
     switch (path) {
       case "/":
-        return "Layout--index"
+        return "Layout--index";
       case "/blog/":
-        return "Layout--blog"
+        return "Layout--blog";
       case "/portfolio/":
-        return "Layout--portfolio"
+        return "Layout--portfolio";
       default:
-        break;
+        return "Layout--blog";
     }
-  }
+  };
 
   render() {
     const { children, location } = this.props;
     const heroSubtitle = this.createHeroSubtitle(location.pathname);
-    const layoutClass = `Layout ${this.createLayoutClassName(location.pathname)}`;
+    const layoutClass = `Layout ${this.createLayoutClassName(
+      location.pathname
+    )}`;
 
     return (
       <Fragment>
@@ -61,7 +63,10 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: "description", content: data.site.siteMetadata.description }
+                {
+                  name: "description",
+                  content: data.site.siteMetadata.description,
+                },
               ]}
             />
           )}
@@ -76,7 +81,11 @@ class Layout extends Component {
               {/* <SocialIcons /> */}
               <ContentCard>
                 <section className="Layout__hero">
-                  <HeroBlock location={location} title="Ryan C. Harris" subtitle={heroSubtitle} />
+                  <HeroBlock
+                    location={location}
+                    title="Ryan C. Harris"
+                    subtitle={heroSubtitle}
+                  />
                 </section>
                 {children}
               </ContentCard>
@@ -85,9 +94,9 @@ class Layout extends Component {
           </div>
         </main>
       </Fragment>
-    )
+    );
   }
-};
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

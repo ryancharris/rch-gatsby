@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
+
+import "../scss/BlogIndex.scss";
 
 class Blog extends Component {
   createPostItems = () => {
@@ -9,11 +11,22 @@ class Blog extends Component {
 
     return blogPostQueryData.map(post => {
       return (
-        <article key={post.node.id}>
-          <h4>{post.node.frontmatter.title}</h4>
-          <p>{post.node.excerpt}</p>
-          <p>{post.node.frontmatter.date}</p>
-        </article>
+        <section key={post.node.id} className="BlogIndex__post">
+          <Link className="BlogIndex__link" to={post.node.fields.slug}>
+            <div className="BlogIndex__header">
+              <h4 className="BlogIndex__title">
+                {post.node.frontmatter.title}
+              </h4>
+              <p className="BlogIndex__date">{post.node.frontmatter.date}</p>
+            </div>
+            <div className="BlogIndex__body">
+              <p>{post.node.excerpt}</p>
+            </div>
+          </Link>
+          {blogPostQueryData.indexOf(post) !== blogPostQueryData.length - 1 && (
+            <hr className="page__line page__line--blog" />
+          )}
+        </section>
       );
     });
   };
@@ -35,8 +48,11 @@ export const query = graphql`
           id
           excerpt
           frontmatter {
-            date(formatString: "MMM, DD, YYYY")
+            date(formatString: "MMM. DD, YYYY")
             title
+          }
+          fields {
+            slug
           }
         }
       }

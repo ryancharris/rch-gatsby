@@ -3,7 +3,6 @@
   font-family: "Futura", sans-serif;
   font-size: 36px;
   font-weight: bold;
-
 }
 
 @mixin font-28-bold($color) {
@@ -13,18 +12,34 @@
   font-weight: bold;
 }
 
+@mixin font-24-bold-oblique($color) {
+  color: $color;
+  font-family: "Helvetica", sans-serif;
+  font-size: 24px;
+  font-style: oblique;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
 @mixin font-18($color) {
   color: $color;
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: normal;
 }
 
 @mixin font-18-bold($color) {
   color: $color;
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: bold;
+}
+
+@mixin font-16($color) {
+  color: $color;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 @mixin font-14($color) {

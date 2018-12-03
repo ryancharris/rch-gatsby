@@ -1,0 +1,38 @@
+@import "./colors";
+@import "./fonts";
+
+.BlogIndex {
+  &__link {
+    text-decoration: none;
+  }
+
+  &__header {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+  }
+
+  &__date,
+  &__title {
+    margin: 0;
+  }
+
+  &__title {
+    @include font-18-bold($black);
+  }
+
+  &__date {
+    @include font-14($black);
+  }
+
+  &__body {
+    @include font-16($black);
+    line-height: 1.5;
+
+    p {
+      margin: 0;
+    }
+  }
+}

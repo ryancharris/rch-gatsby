@@ -1,0 +1,29 @@
+@import "./colors";
+@import "./fonts";
+
+.BlogPost {
+  &__header {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__date,
+  &__title {
+    margin: 0;
+  }
+
+  &__date {
+    @include font-14($black);
+  }
+
+  &__body {
+    @include font-16($black);
+    line-height: 1.5;
+
+    blockquote {
+      @include font-24-bold-oblique($black);
+    }
+  }
+}
