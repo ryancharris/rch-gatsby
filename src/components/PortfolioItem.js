@@ -31,3 +31,5 @@ PortfolioItem.propTypes = {
   description: PropTypes.string.isRequired,
   lastItem: PropTypes.bool.isRequired,
 };
+
+PortfolioItem.defaultProps = {};

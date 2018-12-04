@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 import "../scss/AboutItem.scss";
 
@@ -57,3 +58,14 @@ class AboutItem extends Component {
 }
 
 export default AboutItem;
+
+AboutItem.propTypes = {
+  date: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+};
+
+AboutItem.defaultProps = {};

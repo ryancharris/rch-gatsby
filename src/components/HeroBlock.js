@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import PropTypes from "prop-types";
 
 import SocialIcons from "./SocialIcons";
 
@@ -35,3 +36,11 @@ class HeroBlock extends Component {
 }
 
 export default HeroBlock;
+
+HeroBlock.propTypes = {
+  location: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+};
+
+HeroBlock.defaultProps = {};
