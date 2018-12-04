@@ -17,7 +17,7 @@
   &__image {
     height: 200px;
     margin: 0 0 30px 0;
-    object-fit: cover
+    object-fit: cover;
     width: 100%;
   }
 
@@ -37,9 +37,22 @@
   &__body {
     @include font-16($black);
     line-height: 1.5;
+    margin-bottom: 15px;
 
     p {
       margin: 0;
     }
+  }
+
+  &__read-more-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__read-more {
+    @include font-16($aqua);
+    margin-right: 15px;
+    text-decoration: none;
   }
 }

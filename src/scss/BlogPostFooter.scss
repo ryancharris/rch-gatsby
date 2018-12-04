@@ -1,0 +1,12 @@
+@import "./colors";
+@import "./fonts";
+
+.BlogPostFooter {
+  text-align: center;
+
+  &__avatar {
+    border: 3px solid $black;
+    border-radius: 50%;
+    width: 100px;
+  }
+}

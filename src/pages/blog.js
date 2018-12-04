@@ -26,10 +26,15 @@ class Blog extends Component {
               src={postIndexImageSource}
               alt={post.node.frontmatter.title}
             />
-            <div className="BlogIndex__body">
-              <p>{post.node.excerpt}</p>
-            </div>
           </Link>
+          <div className="BlogIndex__body">
+            <p>{post.node.excerpt}</p>
+          </div>
+          <div className="BlogIndex__read-more-wrapper">
+            <Link className="BlogIndex__read-more" to={post.node.fields.slug}>
+              Read More...
+            </Link>
+          </div>
           {blogPostQueryData.indexOf(post) !== blogPostQueryData.length - 1 && (
             <hr className="page__line page__line--blog" />
           )}

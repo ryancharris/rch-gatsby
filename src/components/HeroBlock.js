@@ -18,7 +18,11 @@ class HeroBlock extends Component {
       <div className="HeroBlock">
         <h1 className="HeroBlock__title">{title}</h1>
         <Fragment>
-          <img className="HeroBlock__avatar" src={avatar} alt="Ryan Harris" />
+          <img
+            className="HeroBlock__avatar"
+            src={avatar}
+            alt="Ryan C. Harris"
+          />
           {/* {location.pathname === "/" && <SocialIcons />} */}
           <SocialIcons />
         </Fragment>
