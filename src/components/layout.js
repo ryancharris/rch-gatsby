@@ -75,7 +75,7 @@ class Layout extends Component {
         <main className={layoutClass}>
           <div className="Layout__content">
             <header className="Layout__nav">
-              <Nav />
+              <Nav path={location.pathname} />
             </header>
             <section className="Layout__body">
               {/* <SocialIcons /> */}
