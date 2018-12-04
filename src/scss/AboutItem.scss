@@ -32,8 +32,10 @@
     @include font-14($black);
   }
 
-  &__description {
+  &__description,
+  &__location {
     @include font-14($black);
+    line-height: 1.5;
     margin: 0;
   }
 

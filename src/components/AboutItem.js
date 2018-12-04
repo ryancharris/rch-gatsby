@@ -33,7 +33,7 @@ class AboutItem extends Component {
   };
 
   render() {
-    const { date, description, link, title } = this.props;
+    const { date, description, link, location, title } = this.props;
     const logo = this.getLogo();
 
     return (
@@ -49,6 +49,7 @@ class AboutItem extends Component {
             <span className="AboutItem__date">{date}</span>
           </div>
           <p className="AboutItem__description">{description}</p>
+          <p className="AboutItem__location">{location}</p>
         </div>
       </div>
     );

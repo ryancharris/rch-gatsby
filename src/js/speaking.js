@@ -9,5 +9,6 @@ export const speakingExperience = [
     description: `"Building a Blog with Gatsby" (Co-Speaker)`,
     title: "Liberty JS",
     link: "https://libertyjs.com/",
+    location: "Philadelphia, PA",
   },
 ];

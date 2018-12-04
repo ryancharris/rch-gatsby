@@ -17,6 +17,7 @@ class Index extends Component {
           date={item.date}
           description={item.description}
           link={item.link}
+          location={item.location}
           title={item.title}
           type={item.type}
         />
@@ -32,6 +33,7 @@ class Index extends Component {
           date={item.date}
           description={item.description}
           link={item.link}
+          location={item.location}
           title={item.title}
           type={item.type}
         />

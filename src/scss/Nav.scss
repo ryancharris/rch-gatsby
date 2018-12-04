@@ -2,7 +2,7 @@
 @import "fonts";
 
 .Nav {
-  @include font-14-bold($white);
+  @include font-18-bold($white);
 
   display: flex;
   justify-content: space-around;
@@ -15,6 +15,7 @@
     color: $white;
     padding-bottom: 10px;
     text-decoration: none;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
     text-transform: lowercase;
     transition: border 150ms ease-in;
   }
