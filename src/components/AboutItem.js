@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 import "../scss/AboutItem.scss";
 
@@ -30,16 +30,18 @@ class AboutItem extends Component {
       default:
         return;
     }
-  }
+  };
 
   render() {
-    const { date, description, title } = this.props;
+    const { date, description, link, title } = this.props;
     const logo = this.getLogo();
 
     return (
       <div className="AboutItem">
         <div className="AboutItem__logo-wrapper">
-          <img className="AboutItem__logo" src={logo} alt={title}/>
+          <a href={link}>
+            <img className="AboutItem__logo" src={logo} alt={title} />
+          </a>
         </div>
         <div className="AboutItem__info">
           <div className="AboutItem__info-header">
