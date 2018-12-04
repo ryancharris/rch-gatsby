@@ -6,7 +6,7 @@ import "../scss/PortfolioItem.scss";
 function PortfolioItem(props) {
   return (
     <Fragment>
-      <a href={props.link} className="PortfolioItem__link">
+      <a href={props.link} className="PortfolioItem__link" title={props.title}>
         <div className="PortfolioItem">
           <div className="PortfolioItem__img-wrapper">
             {/* TODO: Wire up actual images for each project */}

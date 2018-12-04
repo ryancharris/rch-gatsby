@@ -39,7 +39,7 @@ class AboutItem extends Component {
     return (
       <div className="AboutItem">
         <div className="AboutItem__logo-wrapper">
-          <a href={link}>
+          <a href={link} title={title}>
             <img className="AboutItem__logo" src={logo} alt={title} />
           </a>
         </div>
