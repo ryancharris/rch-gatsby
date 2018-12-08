@@ -9,8 +9,11 @@ function PortfolioItem(props) {
       <a href={props.link} className="PortfolioItem__link" title={props.title}>
         <div className="PortfolioItem">
           <div className="PortfolioItem__img-wrapper">
-            {/* TODO: Wire up actual images for each project */}
-            {/* <img className="PortfolioItem__img" src={} alt="" /> */}
+            <img
+              className="PortfolioItem__img"
+              src={props.image}
+              alt={props.title}
+            />
           </div>
           <div className="PortfolioItem__content">
             <h2 className="PortfolioItem__title">{props.title}</h2>
@@ -26,10 +29,11 @@ function PortfolioItem(props) {
 export default PortfolioItem;
 
 PortfolioItem.propTypes = {
-  image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   lastItem: PropTypes.bool.isRequired,
+  link: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 PortfolioItem.defaultProps = {};

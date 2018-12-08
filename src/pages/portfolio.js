@@ -5,6 +5,29 @@ import PortfolioItem from "../components/PortfolioItem";
 
 import { portfolioPieces } from "../js/portfolio";
 
+import grittysBlogImg from "../images/grittys-blog.png";
+import portfolioImg from "../images/portfolio-v1.png";
+import ticTacToeImg from "../images/tic-tac-toe.png";
+import whoSpeaksImg from "../images/who-speaks-for-us.png";
+import whoImg from "../images/who.png";
+
+function getItemImage(itemTitle) {
+  switch (itemTitle) {
+    case "Gritty's Blog":
+      return grittysBlogImg;
+    case "Portfolio v1.0":
+      return portfolioImg;
+    case "Tic Tac Toe":
+      return ticTacToeImg;
+    case "Who":
+      return whoImg;
+    case "Who Speaks for Us?":
+      return whoSpeaksImg;
+    default:
+      return null;
+  }
+}
+
 class Portfolio extends Component {
   createPortfolioItems = () => {
     return portfolioPieces.map(piece => {
@@ -14,11 +37,11 @@ class Portfolio extends Component {
       return (
         <PortfolioItem
           key={`${piece.title}`}
-          image={piece.image}
           title={piece.title}
           description={piece.description}
           lastItem={lastItem}
           link={piece.link}
+          image={getItemImage(piece.title)}
         />
       );
     });

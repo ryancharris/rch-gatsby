@@ -2,7 +2,7 @@
 @import "fonts";
 
 .PortfolioItem {
-  align-items: stretch;
+  align-items: center;
   display: flex;
   flex-direction: row;
 
@@ -21,7 +21,7 @@
   }
 
   .PortfolioItem__img-wrapper {
-    width: 20%;
+    width: 30%;
   }
 
   .PortfolioItem__img {
