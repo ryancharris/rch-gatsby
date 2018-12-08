@@ -5,11 +5,11 @@ import PortfolioItem from "../components/PortfolioItem";
 
 import { portfolioPieces } from "../js/portfolio";
 
-import grittysBlogImg from "../images/grittys-blog.png";
-import portfolioImg from "../images/portfolio-v1.png";
-import ticTacToeImg from "../images/tic-tac-toe.png";
-import whoSpeaksImg from "../images/who-speaks-for-us.png";
-import whoImg from "../images/who.png";
+import grittysBlogImg from "../images/portfolio/grittys-blog.png";
+import portfolioImg from "../images/portfolio/portfolio-v1.png";
+import ticTacToeImg from "../images/portfolio/tic-tac-toe.png";
+import whoSpeaksImg from "../images/portfolio/who-speaks-for-us.png";
+import whoImg from "../images/portfolio/who.png";
 
 function getItemImage(itemTitle) {
   switch (itemTitle) {

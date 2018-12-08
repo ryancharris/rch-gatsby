@@ -8,7 +8,6 @@ import TwitterIcon from "!svg-react-loader!../images/svg/twitter.svg?name=Twitte
 import "../scss/Socialicons.scss";
 
 function SocialIcons(props) {
-  console.log(props.location.pathname);
   let linkClass;
   switch (props.location.pathname) {
     case "/":

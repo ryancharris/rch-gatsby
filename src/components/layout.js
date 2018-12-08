@@ -66,7 +66,11 @@ class Layout extends Component {
             <section className="Layout__body">
               <ContentCard>
                 <section className="Layout__hero">
-                  <HeroBlock location={location} title="Ryan C. Harris" />
+                  <HeroBlock
+                    location={location}
+                    subtitle="software engineer"
+                    title="Ryan C. Harris"
+                  />
                 </section>
                 {children}
               </ContentCard>

@@ -6,11 +6,11 @@ import "../scss/AboutItem.scss";
 import { SpeakingTypes } from "../js/speaking";
 import { VolunteerTypes } from "../js/volunteer";
 
-import codedByKids from "../images/coded-by-kids.png";
-import gdi from "../images/gdi.png";
-import libertyJs from "../images/liberty-js.png";
-import railsBridge from "../images/rails-bridge.png";
-import techGirlz from "../images/tech-girlz.png";
+import codedByKids from "../images/volunteer/coded-by-kids.png";
+import gdi from "../images/volunteer/gdi.png";
+import libertyJs from "../images/speaking/liberty-js.png";
+import railsBridge from "../images/volunteer/rails-bridge.png";
+import techGirlz from "../images/volunteer/tech-girlz.png";
 
 class AboutItem extends Component {
   getLogo = () => {
