@@ -1,18 +1,36 @@
 @import "colors";
 
-.SocialIcons__list {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0 0 5px 0;
-  padding: 0;
-}
+.SocialIcons {
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 0 5px 0;
+    padding: 0;
+  }
 
-.SocialIcons__list-item {
-  margin: 0 10px 0 10px;
-}
+  &__list-item {
+    margin: 0 10px 0 10px;
+  }
 
-.SocialIcons__icon {
-  fill: $white;
-  width: 20px;
+  &__icon {
+    fill: $black;
+    width: 20px;
+  }
+
+  &__link--blog:hover {
+    .SocialIcons__icon {
+      fill: $aqua;
+    }
+  }
+  &__link--index:hover {
+    .SocialIcons__icon {
+      fill: $pink;
+    }
+  }
+  &__link--portfolio:hover {
+    .SocialIcons__icon {
+      fill: $yellow;
+    }
+  }
 }

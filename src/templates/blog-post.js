@@ -16,7 +16,7 @@ export default props => {
         <div
           className="BlogPost__header"
           style={{
-            background: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), ${heroImage}`,
+            background: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)), ${heroImage}`,
             backgroundSize: "cover",
           }}
         >

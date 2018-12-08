@@ -64,10 +64,9 @@ class Layout extends Component {
               <Nav path={location.pathname} />
             </header>
             <section className="Layout__body">
-              {/* <SocialIcons /> */}
               <ContentCard>
                 <section className="Layout__hero">
-                  <HeroBlock title="Ryan C. Harris" />
+                  <HeroBlock location={location} title="Ryan C. Harris" />
                 </section>
                 {children}
               </ContentCard>
