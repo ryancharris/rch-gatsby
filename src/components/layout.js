@@ -13,19 +13,6 @@ import "../scss/normalize.css";
 import "../scss/Layout.scss";
 
 class Layout extends Component {
-  createHeroSubtitle = path => {
-    switch (path) {
-      case "/":
-        return "hi.";
-      case "/blog/":
-        return "blog.";
-      case "/portfolio/":
-        return "work.";
-      default:
-        return null;
-    }
-  };
-
   createLayoutClassName = path => {
     switch (path) {
       case "/":
@@ -41,7 +28,6 @@ class Layout extends Component {
 
   render() {
     const { children, location } = this.props;
-    const heroSubtitle = this.createHeroSubtitle(location.pathname);
     const layoutClass = `Layout ${this.createLayoutClassName(
       location.pathname
     )}`;
@@ -81,11 +67,7 @@ class Layout extends Component {
               {/* <SocialIcons /> */}
               <ContentCard>
                 <section className="Layout__hero">
-                  <HeroBlock
-                    location={location}
-                    title="Ryan C. Harris"
-                    subtitle={heroSubtitle}
-                  />
+                  <HeroBlock title="Ryan C. Harris" />
                 </section>
                 {children}
               </ContentCard>

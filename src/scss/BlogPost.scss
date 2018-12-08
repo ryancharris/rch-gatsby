@@ -47,6 +47,11 @@
       margin-top: 0;
     }
 
+    img {
+      margin: 15px 0;
+      max-width: 100%;
+    }
+
     blockquote {
       @include font-24-bold-oblique($black);
       margin: 30px 5%;

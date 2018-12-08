@@ -39,39 +39,20 @@ function Nav(props) {
     if (item.type === "INTERNAL") {
       const cn = getItemClassName(item.to, path);
       return (
-        <Link className={cn} to={item.to}>
+        <Link key={`${item.text.toLowerCase()}`} className={cn} to={item.to}>
           {item.text}
         </Link>
       );
     } else {
       return (
-        <a className="Nav__link" href={item.to}>
+        <a key="cv" className="Nav__link" href={item.to}>
           {item.text}
         </a>
       );
     }
   });
 
-  return (
-    <nav className="Nav">
-      {/* <Link to="/" className="Nav__link">
-        Home
-      </Link>
-      <Link to="/blog/" className="Nav__link">
-        Blog
-      </Link>
-      <Link to="/portfolio/" className="Nav__link">
-        Portfolio
-      </Link> */}
-      {navLinks}
-      {/* <a
-        href="https://drive.google.com/file/d/1h46Y5IIIllrLDuRrcy7G0UkEiZ8VfoGL/view?usp=sharing"
-        className="Nav__link"
-      >
-        C.V.
-      </a> */}
-    </nav>
-  );
+  return <nav className="Nav">{navLinks}</nav>;
 }
 
 export default Nav;

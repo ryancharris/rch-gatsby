@@ -9,11 +9,7 @@ import avatar from "../images/avatar.png";
 
 class HeroBlock extends Component {
   render() {
-    const {
-      // location,
-      title,
-      // subtitle
-    } = this.props;
+    const { title } = this.props;
 
     return (
       <div className="HeroBlock">
@@ -24,12 +20,8 @@ class HeroBlock extends Component {
             src={avatar}
             alt="Ryan C. Harris"
           />
-          {/* {location.pathname === "/" && <SocialIcons />} */}
           <SocialIcons />
         </Fragment>
-        {/* {location.pathname !== "/" && (
-          <h3 className="HeroBlock__subtitle">{subtitle}</h3>
-        )} */}
       </div>
     );
   }
@@ -38,9 +30,7 @@ class HeroBlock extends Component {
 export default HeroBlock;
 
 HeroBlock.propTypes = {
-  location: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
 };
 
 HeroBlock.defaultProps = {};
