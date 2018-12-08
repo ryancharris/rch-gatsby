@@ -15,7 +15,7 @@ export const portfolioPieces = [
   {
     title: "Tic Tac Toe",
     description:
-      "This iteration of the classic game Tic-Tac-Toe was built using vanilla JavaScript as part of a job interview process.",
+      "This iteration of the classic game Tic-Tac-Toe was built using vanilla JavaScript to practice some fundamentals.",
     link: "https://github.com/ryancharris/tic-tac-toe",
   },
   {
@@ -27,7 +27,7 @@ export const portfolioPieces = [
   {
     title: "Who Speaks for Us?",
     description:
-      "As my first foray into React, I built this application using the Sunlight Foundation's now-defunct API to let users look up information about their congressional respresetnatives.",
+      "As my first foray into React, I built this application using the Sunlight Foundation's now-deprecated API to let users look up information about their congressional respresetnatives.",
     link: "https://github.com/ryancharris/who-speaks-for-us",
   },
 ];

@@ -7,6 +7,8 @@ attachments:
 
 Praesent efficitur dui velit, a tempor enim tincidunt sed. Sed in pretium velit. In consectetur maximus orci congue vulputate. Ut viverra magna suscipit lacus tempus laoreet. Aliquam a pharetra tortor, non fringilla nunc. Proin consectetur justo id commodo tempor. Integer ut egestas augue.
 
+![Image](../second-post/code.jpg)
+
 Nulla at euismod arcu. Suspendisse potenti. Maecenas in orci tincidunt, porttitor mauris eu, ullamcorper est. Integer aliquam ligula ac varius venenatis. Fusce posuere felis in ante tempor hendrerit.
 
 > Cras ornare porttitor nunc, vel ultricies metus convallis non. Pellentesque malesuada et lectus id finibus.

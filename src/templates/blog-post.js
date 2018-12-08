@@ -8,21 +8,32 @@ import "../scss/BlogPost.scss";
 
 export default props => {
   const post = props.data.markdownRemark;
-  const heroImage = post.frontmatter.attachments[0].publicURL;
+  const heroImage = `url(${post.frontmatter.attachments[0].publicURL})`;
 
   return (
     <Layout location={props.location}>
       <article className="BlogPost">
-        <div className="BlogPost__header">
+        <div
+          className="BlogPost__header"
+          style={{
+            background: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), ${heroImage}`,
+            backgroundSize: "cover",
+          }}
+        >
           <h1 className="BlogPost__title">{post.frontmatter.title}</h1>
+          <h4 className="BlogPost__time">
+            {post.timeToRead} minute
+            {post.timeToRead > 1 ? "s " : " "}
+            read
+          </h4>
           <h4 className="BlogPost__date">{post.frontmatter.date}</h4>
         </div>
-        <hr className="page__line page__line--blog" />
-        <img
+        {/* <img
           className="BlogPost__hero-image"
           src={heroImage}
           alt={post.frontmatter.title}
-        />
+        /> */}
+        <hr className="page__line page__line--blog" />
         <div
           className="BlogPost__body"
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -45,6 +56,7 @@ export const query = graphql`
           publicURL
         }
       }
+      timeToRead
     }
   }
 `;
