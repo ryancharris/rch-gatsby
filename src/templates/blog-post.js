@@ -28,11 +28,6 @@ export default props => {
           </h4>
           <h4 className="BlogPost__date">{post.frontmatter.date}</h4>
         </div>
-        {/* <img
-          className="BlogPost__hero-image"
-          src={heroImage}
-          alt={post.frontmatter.title}
-        /> */}
         <hr className="page__line page__line--blog" />
         <div
           className="BlogPost__body"

@@ -44,12 +44,7 @@
     line-height: 1.5;
 
     p {
-      margin-top: 0;
-    }
-
-    img {
-      margin: 15px 0;
-      max-width: 100%;
+      padding: 15px 0;
     }
 
     blockquote {
@@ -57,8 +52,8 @@
       margin: 30px 5%;
     }
 
-    .gatsby-resp-image-wrapper {
-      margin: 30px 5% !important;
+    img {
+      max-width: 100%;
     }
   }
 }
