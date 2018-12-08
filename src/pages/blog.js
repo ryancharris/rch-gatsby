@@ -10,8 +10,11 @@ class Blog extends Component {
     const blogPostQueryData = this.props.data.allMarkdownRemark.edges;
 
     return blogPostQueryData.map(post => {
-      const postIndexImageSource =
-        post.node.frontmatter.attachments[0].publicURL;
+      const postIndexImageSource = post.node.frontmatter.attachments
+        ? post.node.frontmatter.attachments[0].publicURL
+        : "";
+
+      const postHasImage = Boolean(postIndexImageSource.length > 0);
       return (
         <section key={post.node.id} className="BlogIndex__post">
           <Link className="BlogIndex__link" to={post.node.fields.slug}>
@@ -21,11 +24,13 @@ class Blog extends Component {
               </h4>
               <p className="BlogIndex__date">{post.node.frontmatter.date}</p>
             </div>
-            <img
-              className="BlogIndex__image"
-              src={postIndexImageSource}
-              alt={post.node.frontmatter.title}
-            />
+            {postHasImage && (
+              <img
+                className="BlogIndex__image"
+                src={postIndexImageSource}
+                alt={post.node.frontmatter.title}
+              />
+            )}
           </Link>
           <div className="BlogIndex__body">
             <p>{post.node.excerpt}</p>
