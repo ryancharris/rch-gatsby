@@ -17,22 +17,13 @@ function BlogPostFooter() {
       </div>
       <div className="BlogPostFooter__about-wrapper">
         <p className="BlogPostFooter__about BlogPostFooter__about--strong">
-          Software Engineer @{" "}
-          <a
-            className="page__blog-link"
-            href="https://www.getguru.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Guru"
-          >
-            Guru
-          </a>
+          Software Engineer @ Guru
         </p>
         <p className="BlogPostFooter__about">
           Front end developer with back end tendencies, film student turned
           engineer, speaker.
         </p>
-        <p className="BlogPostFooter__about BlogPostFooter__about--strong">
+        <p className="BlogPostFooter__about">
           <TwitterIcon className="BlogPostFooter__icon" />
           <a
             className="page__blog-link"
