@@ -29,12 +29,12 @@
   }
 
   &__date {
-    @include font-14($black);
+    @include font-16($black);
   }
 
   &__description,
   &__location {
-    @include font-14($black);
+    @include font-16($black);
     line-height: 1.5;
     margin: 0;
   }

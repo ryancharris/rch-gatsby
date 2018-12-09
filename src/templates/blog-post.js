@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 
+import BlogPostHero from "../components/BlogPostHero";
 import BlogPostFooter from "../components/BlogPostFooter";
 
 import "../scss/BlogPost.scss";
@@ -13,22 +14,12 @@ export default props => {
   return (
     <Layout location={props.location}>
       <article className="BlogPost">
-        <div
-          className="BlogPost__header"
-          style={{
-            background: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)), ${heroImage}`,
-            backgroundSize: "cover",
-          }}
-        >
-          <h1 className="BlogPost__title">{post.frontmatter.title}</h1>
-          <h4 className="BlogPost__time">
-            {post.timeToRead} minute
-            {post.timeToRead > 1 ? "s " : " "}
-            read
-          </h4>
-          <h4 className="BlogPost__date">{post.frontmatter.date}</h4>
-        </div>
-        <hr className="page__line page__line--blog" />
+        <BlogPostHero
+          date={post.frontmatter.date}
+          image={heroImage}
+          minutes={post.timeToRead}
+          title={post.frontmatter.title}
+        />
         <div
           className="BlogPost__body"
           dangerouslySetInnerHTML={{ __html: post.html }}

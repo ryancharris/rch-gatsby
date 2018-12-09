@@ -2,38 +2,6 @@
 @import "./fonts";
 
 .BlogPost {
-  &__header {
-    align-items: center;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    height: 175px;
-    justify-content: center;
-    min-height: 150px;
-  }
-
-  &__date,
-  &__title {
-    margin: 0;
-  }
-
-  &__title {
-    @include font-28-bold($white);
-    margin-bottom: 15px;
-  }
-
-  &__time {
-    @include font-16-bold($white);
-    font-style: italic;
-    margin: 0 0 5px 0;
-  }
-
-  &__date {
-    @include font-16-bold($white);
-    font-style: italic;
-  }
-
   &__hero-image {
     height: 200px;
     object-fit: cover;
@@ -45,7 +13,8 @@
     line-height: 1.5;
 
     p {
-      padding: 15px 0;
+      margin-top: 0;
+      padding: 0 0 15px;
     }
 
     blockquote {

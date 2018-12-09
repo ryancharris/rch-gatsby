@@ -58,6 +58,7 @@ class Index extends Component {
           <p className="page__paragraph">
             I'm currently a Front End Engineer at{" "}
             <a
+              className="page__index-link"
               href="https://www.getguru.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -72,6 +73,7 @@ class Index extends Component {
           <p className="page__paragraph">
             Before joining Guru, I was part of the engineering team at{" "}
             <a
+              className="page__index-link"
               href="https://www.revzilla.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -86,6 +88,7 @@ class Index extends Component {
           <p className="page__paragraph">
             In the fall of 2018, I co-hosted a workshop at{" "}
             <a
+              className="page__index-link"
               href="https://libertyjs.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -94,6 +97,7 @@ class Index extends Component {
             </a>{" "}
             focused on building a blog using{" "}
             <a
+              className="page__index-link"
               href="https://www.gatsbyjs.org/"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,6 +106,7 @@ class Index extends Component {
             </a>
             . As a{" "}
             <a
+              className="page__index-link"
               href="https://www.imdb.com/name/nm2813828/"
               target="_blank"
               rel="noopener noreferrer"
@@ -112,8 +117,16 @@ class Index extends Component {
             tech.
           </p>
           <p className="page__paragraph">
-            If you wanna know more, feel free to reach out via{" "}
-            <a href="http://www.twitter.com/ryan_c_harris">Twitter</a>.
+            If you want to know more, feel free to reach out via{" "}
+            <a
+              className="page__index-link"
+              href="http://www.twitter.com/ryan_c_harris"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+            .
           </p>
           <hr className="page__line page__line--index" />
         </section>

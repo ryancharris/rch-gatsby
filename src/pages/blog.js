@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link, graphql } from "gatsby";
 
+import BlogPostHero from "../components/BlogPostHero";
 import Layout from "../components/layout";
 
 import "../scss/BlogIndex.scss";
@@ -10,27 +11,19 @@ class Blog extends Component {
     const blogPostQueryData = this.props.data.allMarkdownRemark.edges;
 
     return blogPostQueryData.map(post => {
-      const postIndexImageSource = post.node.frontmatter.attachments
-        ? post.node.frontmatter.attachments[0].publicURL
-        : "";
+      const postIndexImageSource = `url(${
+        post.node.frontmatter.attachments[0].publicURL
+      })`;
 
-      const postHasImage = Boolean(postIndexImageSource.length > 0);
       return (
         <section key={post.node.id} className="BlogIndex__post">
           <Link className="BlogIndex__link" to={post.node.fields.slug}>
-            <div className="BlogIndex__header">
-              <h4 className="BlogIndex__title">
-                {post.node.frontmatter.title}
-              </h4>
-              <p className="BlogIndex__date">{post.node.frontmatter.date}</p>
-            </div>
-            {postHasImage && (
-              <img
-                className="BlogIndex__image"
-                src={postIndexImageSource}
-                alt={post.node.frontmatter.title}
-              />
-            )}
+            <BlogPostHero
+              date={post.node.frontmatter.date}
+              image={postIndexImageSource}
+              minutes={post.node.timeToRead}
+              title={post.node.frontmatter.title}
+            />
           </Link>
           <div className="BlogIndex__body">
             <p>{post.node.excerpt}</p>
@@ -40,9 +33,6 @@ class Blog extends Component {
               Read More...
             </Link>
           </div>
-          {blogPostQueryData.indexOf(post) !== blogPostQueryData.length - 1 && (
-            <hr className="page__line page__line--blog" />
-          )}
         </section>
       );
     });
@@ -64,6 +54,7 @@ export const query = graphql`
         node {
           id
           excerpt
+          timeToRead
           frontmatter {
             date(formatString: "MMM. DD, YYYY")
             title

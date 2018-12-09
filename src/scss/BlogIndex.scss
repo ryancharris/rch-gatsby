@@ -2,6 +2,10 @@
 @import "./fonts";
 
 .BlogIndex {
+  &__post {
+    margin-bottom: 30px;
+  }
+
   &__link {
     text-decoration: none;
   }
@@ -57,6 +61,7 @@
   }
 
   &__read-more:hover {
-    text-decoration: underline;
+    background: $aqua;
+    color: $white;
   }
 }
