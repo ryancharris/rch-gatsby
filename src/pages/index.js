@@ -50,16 +50,70 @@ class Index extends Component {
         <section className="page__section">
           <h3 className="page__section-header">About</h3>
           <p className="page__paragraph">
-            Sed ipsum dui, ornare et elementum in, lacinia eget turpis. Aliquam
-            blandit vitae tellus a dapibus. Nullam sollicitudin lacus non est
-            ultrices, sed aliquet sem blandit. Nulla porta sapien eget rhoncus
-            porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Hey there! I'm Ryan{" "}
+            <span role="img" aria-label="Wave emoji">
+              👋
+            </span>
           </p>
           <p className="page__paragraph">
-            Donec ultricies ipsum eget ornare consectetur. Aliquam a sagittis
-            magna. Fusce blandit eleifend condimentum. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas.
+            I'm currently a Front End Engineer at{" "}
+            <a
+              href="https://www.getguru.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Guru"
+            >
+              Guru
+            </a>{" "}
+            in Philadelphia. I spend my days writing React to build our web app,
+            browser extension and Slackbot. And to the backend team's chagrin, I
+            am also known to write a bit of Java.
+          </p>
+          <p className="page__paragraph">
+            Before joining Guru, I was part of the engineering team at{" "}
+            <a
+              href="https://www.revzilla.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="RevZilla"
+            >
+              RevZilla
+            </a>
+            , an e-commerce site for motorcycle enthusiasts. While there I
+            helped re-platform the site from Ruby on Rails to Elixir/Phoenix and
+            build out a custom component engine.
+          </p>
+          <p className="page__paragraph">
+            In the fall of 2018, I co-hosted a workshop at{" "}
+            <a
+              href="https://libertyjs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LibertyJS
+            </a>{" "}
+            focused on building a blog using{" "}
+            <a
+              href="https://www.gatsbyjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gatsby
+            </a>
+            . As a{" "}
+            <a
+              href="https://www.imdb.com/name/nm2813828/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              career changer
+            </a>
+            , I am hoping to speak more in 2019 and help others transition into
+            tech.
+          </p>
+          <p className="page__paragraph">
+            If you wanna know more, feel free to reach out via{" "}
+            <a href="http://www.twitter.com/ryan_c_harris">Twitter</a>.
           </p>
           <hr className="page__line page__line--index" />
         </section>

@@ -30,6 +30,7 @@ function SocialIcons(props) {
         <a
           className={`SocialIcons__link ${linkClass}`}
           href="https://github.com/ryancharris"
+          title="GitHub"
         >
           <GithubIcon className="SocialIcons__icon" />
         </a>
@@ -38,6 +39,7 @@ function SocialIcons(props) {
         <a
           className={`SocialIcons__link ${linkClass}`}
           href="http://www.linkedin.com/in/ryancharris"
+          title="LinkedIn"
         >
           <LinkedInIcon className="SocialIcons__icon" />
         </a>
@@ -46,6 +48,7 @@ function SocialIcons(props) {
         <a
           className={`SocialIcons__link ${linkClass}`}
           href="http://www.twitter.com/ryan_c_harris"
+          title="Twitter"
         >
           <TwitterIcon className="SocialIcons__icon" />
         </a>

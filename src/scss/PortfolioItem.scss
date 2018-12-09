@@ -2,7 +2,6 @@
 @import "fonts";
 
 .PortfolioItem {
-  align-items: center;
   display: flex;
   flex-direction: row;
 
@@ -17,7 +16,8 @@
   }
 
   .PortfolioItem__description {
-    @include font-14($black);
+    @include font-16($black);
+    line-height: 1.5;
   }
 
   .PortfolioItem__img-wrapper {
@@ -29,7 +29,7 @@
   }
 
   .PortfolioItem__content {
-    padding: 10px 20px 20px;
+    padding: 5px 20px 20px;
     width: 100%;
   }
 }
