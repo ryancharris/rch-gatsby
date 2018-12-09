@@ -5,13 +5,12 @@ import "../scss/BlogPostHero.scss";
 
 function BlogPostHero(props) {
   const { date, image, minutes, title } = props;
-  console.log(props);
   return (
     <Fragment>
       <div
         className="BlogPostHero"
         style={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)), ${image}`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25)), ${image}`,
           backgroundSize: "cover",
         }}
       >

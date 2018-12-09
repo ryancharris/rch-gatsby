@@ -20,12 +20,25 @@
     text-decoration: none;
   }
 
+  &__blog-link,
+  &__index-link {
+    text-decoration: none;
+  }
+
   &__index-link {
     color: $pink;
-    text-decoration: none;
 
     &:hover {
       background: $pink;
+      color: $white;
+    }
+  }
+
+  &__blog-link {
+    color: $aqua;
+
+    &:hover {
+      background: $aqua;
       color: $white;
     }
   }

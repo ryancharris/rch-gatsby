@@ -2,11 +2,40 @@
 @import "./fonts";
 
 .BlogPostFooter {
-  text-align: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+
+  &__avatar-wrapper {
+    margin-right: 30px;
+  }
 
   &__avatar {
-    border: 3px solid $black;
+    border: 3px solid $aqua;
     border-radius: 50%;
     width: 100px;
+  }
+
+  &__about-wrapper {
+    flex: 1;
+  }
+
+  &__about {
+    @include font-14($black);
+    line-height: 1.5;
+    margin: 0 0 5px;
+
+    &--strong {
+      font-weight: bold;
+    }
+  }
+
+  &__icon {
+    fill: $aqua;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 16px;
   }
 }

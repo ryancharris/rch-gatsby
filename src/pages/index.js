@@ -67,8 +67,8 @@ class Index extends Component {
               Guru
             </a>{" "}
             in Philadelphia. I spend my days writing React to build our web app,
-            browser extension and Slackbot. And to the backend team's chagrin, I
-            am also known to write a bit of Java.
+            browser extension and Slackbot. To the back end team's chagrin, I am
+            also known to write a bit of Java.
           </p>
           <p className="page__paragraph">
             Before joining Guru, I was part of the engineering team at{" "}

@@ -53,7 +53,7 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt
+          excerpt(pruneLength: 500)
           timeToRead
           frontmatter {
             date(formatString: "MMM. DD, YYYY")
