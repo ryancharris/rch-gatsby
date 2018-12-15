@@ -3,12 +3,30 @@ import React, { Component } from "react";
 import AboutItem from "../components/AboutItem";
 import Layout from "../components/layout";
 
+import { lightningTalks } from "../js/lightingTalks";
 import { speakingExperience } from "../js/speaking";
 import { volunteerExperience } from "../js/volunteer";
 
 import "../scss/page.scss";
 
 class Index extends Component {
+  createLightningTalkItems = () => {
+    return lightningTalks.map(item => {
+      return (
+        <AboutItem
+          key={`${item.type}-${item.date}`}
+          date={item.date}
+          deck={item.deck}
+          description={item.description}
+          link={item.link}
+          location={item.location}
+          title={item.title}
+          type={item.type}
+        />
+      );
+    });
+  };
+
   createVolunteerItems = () => {
     return volunteerExperience.map(item => {
       return (
@@ -42,6 +60,7 @@ class Index extends Component {
   };
 
   render() {
+    const lightningTalks = this.createLightningTalkItems();
     const volunteerItems = this.createVolunteerItems();
     const speakingItems = this.createSpeakingItems();
 
@@ -132,14 +151,20 @@ class Index extends Component {
         </section>
 
         <section className="page__section">
-          <h3 className="page__section-header">Volunteering</h3>
-          {volunteerItems}
+          <h3 className="page__section-header">Speaking</h3>
+          {speakingItems}
           <hr className="page__line page__line--index" />
         </section>
 
         <section className="page__section">
-          <h3 className="page__section-header">Speaking</h3>
-          {speakingItems}
+          <h3 className="page__section-header">Lightning Talks</h3>
+          {lightningTalks}
+          <hr className="page__line page__line--index" />
+        </section>
+
+        <section className="page__section">
+          <h3 className="page__section-header">Volunteering</h3>
+          {volunteerItems}
         </section>
       </Layout>
     );

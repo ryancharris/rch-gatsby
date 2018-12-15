@@ -43,4 +43,21 @@
     @include font-18-bold($black);
     margin: 0;
   }
+
+  &__deck-link-wrapper {
+    display: block;
+    margin: 15px 15px 0 0;
+    text-align: right;
+  }
+
+  &__deck-link {
+    @include font-14-italic($pink);
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  &__deck-link:hover {
+    background: $pink;
+    color: $white;
+  }
 }
