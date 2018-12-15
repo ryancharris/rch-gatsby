@@ -15,8 +15,10 @@ export default props => {
     <Layout location={props.location}>
       <article className="BlogPost">
         <BlogPostHero
+          caption={post.frontmatter.heroCaption}
           date={post.frontmatter.date}
           image={heroImage}
+          link={post.frontmatter.heroLink}
           minutes={post.timeToRead}
           title={post.frontmatter.title}
         />
@@ -38,6 +40,8 @@ export const query = graphql`
       frontmatter {
         date(formatString: "MMM. DD, YYYY")
         title
+        heroCaption
+        heroLink
         attachments {
           publicURL
         }

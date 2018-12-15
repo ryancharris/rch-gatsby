@@ -11,6 +11,12 @@
   justify-content: center;
   min-height: 150px;
 
+  &__caption {
+    @include font-14-italic($black);
+    display: block;
+    margin: 15px 0;
+  }
+
   &__date,
   &__title {
     margin: 0;

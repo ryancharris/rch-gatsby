@@ -35,6 +35,14 @@
   font-weight: bold;
 }
 
+@mixin font-14-italic($color) {
+  color: $color;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+}
+
 @mixin font-16-bold($color) {
   color: $color;
   font-family: Helvetica, sans-serif;
