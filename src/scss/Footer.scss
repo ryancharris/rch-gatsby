@@ -15,7 +15,8 @@
     margin: 0 0 8px 0;
   }
 
-  .SocialIcons__icon {
+  .SocialIcons__icon,
+  .SocialIcons__icon:hover {
     fill: $white;
   }
 }

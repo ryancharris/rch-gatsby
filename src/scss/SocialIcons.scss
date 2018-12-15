@@ -2,6 +2,7 @@
 
 .SocialIcons {
   &__list {
+    align-items: center;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -16,6 +17,11 @@
   &__icon {
     fill: $black;
     width: 20px;
+  }
+
+  &__link {
+    display: block;
+    fill: black;
   }
 
   &__link--blog:hover {

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import GithubIcon from "!svg-react-loader!../images/svg/github.svg?name=GithubIcon";
 import LinkedInIcon from "!svg-react-loader!../images/svg/linkedin.svg?name=LinkedInIcon";
 import TwitterIcon from "!svg-react-loader!../images/svg/twitter.svg?name=TwitterIcon";
+import MediumIcon from "!svg-react-loader!../images/svg/medium.svg?name=MediumIcon";
 
 import "../scss/Socialicons.scss";
 
@@ -38,6 +39,15 @@ function SocialIcons(props) {
       <li className="SocialIcons__list-item">
         <a
           className={`SocialIcons__link ${linkClass}`}
+          href="http://www.twitter.com/ryan_c_harris"
+          title="Twitter"
+        >
+          <TwitterIcon className="SocialIcons__icon" />
+        </a>
+      </li>
+      <li className="SocialIcons__list-item">
+        <a
+          className={`SocialIcons__link ${linkClass}`}
           href="http://www.linkedin.com/in/ryancharris"
           title="LinkedIn"
         >
@@ -47,10 +57,10 @@ function SocialIcons(props) {
       <li className="SocialIcons__list-item">
         <a
           className={`SocialIcons__link ${linkClass}`}
-          href="http://www.twitter.com/ryan_c_harris"
-          title="Twitter"
+          href="https://medium.com/@ryancharris"
+          title="Medium"
         >
-          <TwitterIcon className="SocialIcons__icon" />
+          <MediumIcon className="SocialIcons__icon" />
         </a>
       </li>
     </ul>
