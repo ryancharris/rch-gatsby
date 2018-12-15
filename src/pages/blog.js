@@ -19,8 +19,10 @@ class Blog extends Component {
         <section key={post.node.id} className="BlogIndex__post">
           <Link className="BlogIndex__link" to={post.node.fields.slug}>
             <BlogPostHero
+              caption={post.node.frontmatter.heroCaption}
               date={post.node.frontmatter.date}
               image={postIndexImageSource}
+              link={post.node.frontmatter.heroLink}
               minutes={post.node.timeToRead}
               title={post.node.frontmatter.title}
             />
@@ -58,6 +60,8 @@ export const query = graphql`
           frontmatter {
             date(formatString: "MMM. DD, YYYY")
             title
+            heroCaption
+            heroLink
             attachments {
               publicURL
             }
