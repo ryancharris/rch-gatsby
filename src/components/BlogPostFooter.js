@@ -20,8 +20,8 @@ function BlogPostFooter() {
           Software Engineer @ Guru
         </p>
         <p className="BlogPostFooter__about">
-          Front end developer with back end tendencies, film student turned
-          engineer, speaker.
+          Front end developer with back end tendencies. Film student turned
+          engineer. Still learning.
         </p>
         <p className="BlogPostFooter__about">
           <TwitterIcon className="BlogPostFooter__icon" />
