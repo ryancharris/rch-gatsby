@@ -60,7 +60,7 @@ class AboutItem extends Component {
         {deck && (
           <span className="AboutItem__deck-link-wrapper">
             <a className="AboutItem__deck-link" href={deck} target="__blank">
-              Check out the slides...
+              Slide deck...
             </a>
           </span>
         )}

@@ -5,7 +5,8 @@ export const LightningTalkTypes = {
 export const lightningTalks = [
   {
     date: "Dec. 2018",
-    deck: "",
+    deck:
+      "https://docs.google.com/presentation/d/1YGxkB5c41sFidbBLbxwL4HJZ7VlPxTjnMkMvGs2bqIU/edit?usp=sharing",
     description:
       "As front-end developers, we use a lot tools to get our work done. One of the most powerful is JSX, a JavaScript language extension.",
     link: "https://www.getguru.com",
