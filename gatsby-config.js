@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: "https://www.ryancharris.com",
     description: "Frontend software engineer and developer in Philadelphia, PA",
   },
-  pathPrefix: "/rch-gatsby",
   plugins: [
     "gatsby-plugin-react-helmet",
     {
