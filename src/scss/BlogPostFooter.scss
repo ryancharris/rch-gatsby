@@ -5,10 +5,11 @@
   align-items: center;
   display: flex;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 
   &__avatar-wrapper {
-    margin-right: 30px;
+    flex-basis: 20%;
+    padding-right: 10px;
   }
 
   &__avatar {
@@ -18,7 +19,8 @@
   }
 
   &__about-wrapper {
-    flex: 1;
+    flex-basis: 80%;
+    padding: 0 10px;
   }
 
   &__about {

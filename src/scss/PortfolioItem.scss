@@ -2,6 +2,7 @@
 @import "fonts";
 
 .PortfolioItem {
+  align-items: top;
   display: flex;
   flex-direction: row;
 
@@ -21,16 +22,19 @@
   }
 
   .PortfolioItem__img-wrapper {
-    width: 30%;
+    flex-basis: 20%;
+    padding-right: 10px;
+    text-align: center;
   }
 
   .PortfolioItem__img {
+    max-width: 100px;
     width: 100%;
   }
 
   .PortfolioItem__content {
-    padding: 5px 20px 20px;
-    width: 100%;
+    flex-basis: 80%;
+    padding: 0 10px;
   }
 }
 

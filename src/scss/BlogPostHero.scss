@@ -10,6 +10,7 @@
   height: 175px;
   justify-content: center;
   min-height: 150px;
+  text-align: center;
 
   &__caption {
     @include font-14-italic($black);

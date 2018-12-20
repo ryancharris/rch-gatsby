@@ -43,19 +43,19 @@ class AboutItem extends Component {
     return (
       <Fragment>
         <div className="AboutItem">
-          <div className="AboutItem__logo-wrapper">
+          <div className="AboutItem__flex-item AboutItem__logo-wrapper">
             <a href={link} title={title}>
               <img className="AboutItem__logo" src={logo} alt={title} />
             </a>
           </div>
-          <div className="AboutItem__info">
+          <div className="AboutItem__flex-item AboutItem__info">
             <div className="AboutItem__info-header">
               <h4 className="AboutItem__title">{title}</h4>
-              <span className="AboutItem__date">{date}</span>
             </div>
             <p className="AboutItem__description">{description}</p>
             {location && <p className="AboutItem__location">{location}</p>}
           </div>
+          <div className="AboutItem__flex-item AboutItem__date">{date}</div>
         </div>
         {deck && (
           <span className="AboutItem__deck-link-wrapper">
