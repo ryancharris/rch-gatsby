@@ -27,7 +27,7 @@ export const portfolioPieces = [
   {
     title: "Who Speaks for Us?",
     description:
-      "As my first foray into React, I built this application using the Sunlight Foundation's now-deprecated API to let users look up information about their congressional respresetnatives.",
+      "As my first foray into React, I built this application using the Sunlight Foundation's now-deprecated API to let users look up information about their congressional representatives.",
     link: "https://github.com/ryancharris/who-speaks-for-us",
   },
 ];
