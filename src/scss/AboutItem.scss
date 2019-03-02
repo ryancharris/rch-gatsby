@@ -41,9 +41,17 @@
 
   &__description,
   &__location {
-    @include font-16($black);
     line-height: 1.5;
     margin: 0;
+  }
+
+  &__description {
+    @include font-16($black);
+  }
+
+  &__location {
+    @include font-14($black);
+    margin-top: 12px;
   }
 
   &__title {

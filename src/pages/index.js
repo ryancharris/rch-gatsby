@@ -49,6 +49,7 @@ class Index extends Component {
         <AboutItem
           key={`${item.type}-${item.date}`}
           date={item.date}
+          deck={item.deck}
           description={item.description}
           link={item.link}
           location={item.location}
@@ -157,7 +158,7 @@ class Index extends Component {
         </section>
 
         <section className="page__section">
-          <h3 className="page__section-header">Talks</h3>
+          <h3 className="page__section-header">Lightning Talks</h3>
           {lightningTalks}
           <hr className="page__line page__line--index" />
         </section>

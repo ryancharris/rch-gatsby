@@ -11,6 +11,7 @@ export const lightningTalks = [
       "As front-end developers, we use a lot tools to get our work done. One of the most powerful is JSX, a JavaScript language extension.",
     link: "https://www.getguru.com",
     title: "What the heck is JSX?",
+    location: "Philadelphia, PA",
     type: LightningTalkTypes.GURU_FE_MEETING,
   },
   {
@@ -21,6 +22,7 @@ export const lightningTalks = [
       "In React, props and state are updated asynchronously. This makes their  values unreliable when calculating state and can cause unexpected behavior.",
     link: "https://www.getguru.com",
     title: "Functional setState in React",
+    location: "Philadelphia, PA",
     type: LightningTalkTypes.GURU_FE_MEETING,
   },
 ];

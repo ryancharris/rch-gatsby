@@ -11,6 +11,7 @@ import codedByKids from "../images/volunteer/coded-by-kids.png";
 import gdi from "../images/volunteer/gdi.png";
 import guruLogo from "../images/lightning-talks/guru-logo.png";
 import libertyJs from "../images/speaking/liberty-js.png";
+import meetup from "../images/speaking/meetup.png";
 import railsBridge from "../images/volunteer/rails-bridge.png";
 import techGirlz from "../images/volunteer/tech-girlz.png";
 
@@ -21,6 +22,8 @@ class AboutItem extends Component {
     switch (type) {
       case LightningTalkTypes.GURU_FE_MEETING:
         return guruLogo;
+      case SpeakingTypes.MEETUP:
+        return meetup;
       case SpeakingTypes.LIBERTY_JS:
         return libertyJs;
       case VolunteerTypes.CODED_BY_KIDS:
@@ -53,9 +56,11 @@ class AboutItem extends Component {
               <h4 className="AboutItem__title">{title}</h4>
             </div>
             <p className="AboutItem__description">{description}</p>
+          </div>
+          <div className="AboutItem__flex-item AboutItem__date">
+            {date}
             {location && <p className="AboutItem__location">{location}</p>}
           </div>
-          <div className="AboutItem__flex-item AboutItem__date">{date}</div>
         </div>
         {deck && (
           <span className="AboutItem__deck-link-wrapper">
