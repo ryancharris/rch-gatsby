@@ -65,6 +65,12 @@
       white-space: pre-wrap;
     }
 
+    code {
+      background: $black;
+      color: $aqua;
+      padding: 0 6px;
+    }
+
     caption {
       @include font-14-italic($black);
     }
