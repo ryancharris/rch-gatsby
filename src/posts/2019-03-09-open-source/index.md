@@ -23,16 +23,6 @@ You will also gain experience in the “soft-skills” of engineering like how t
 
 **Open source projects provide an opportunity for developers to learn skills that will make them more employable.** Here’s how you can get started!
 
-### Why contribute to open source?
-
-Before we get into the “hows” of open source, let’s talk a bit about the “whys”. As a developer, some benefits for participating in the OSS community include:
-
-1. You will **learn common team-based workflows**, including how to use version control systems like git and platforms like GitHub
-2. You will gain experience **communicating and collaborating** with other developers
-3. You can **give back** to the developer community
-
-All great opportunities! Now, let’s talk about how to get started!
-
 ### How do I find an open source project?
 
 Figuring out where to start is hard. There are tons of projects out there that are currently being worked on, but how do you know which one is the right one for you? There are a few small ways you can make the search a bit easier.
