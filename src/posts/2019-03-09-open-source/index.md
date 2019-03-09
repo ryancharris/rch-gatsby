@@ -9,19 +9,19 @@ attachments:
   - "./hacktoberfest.png"
 ---
 
-When I was first trying to transition into tech, I spent a lot of time networking at Meetups and having coffee with local developers to find out how I could build my skills. **There were three pieces of advice I heard consistently: do online tutorials, build portfolio projects and contribute to open source projects.**
+Before becoming a developer, I spent a decade working in film and television, so when I first started transitioning into tech, I spent a lot of time networking, going to Meetups and having coffee with other developers. I was primarily interested in **finding out what I needed to know to become employable and how I could go about learning those skills**. I heard a few answers consistently: do online tutorials, build your portfolio and contribute to open source projects.
 
-While the first two are relatively straightforward, contributing to open source software (OSS) projects can be a bit more opaque. Even experienced developers unfamiliar with OSS often have questions like:
-
-- How do I find an open source project?
-- What is the workflow for contributing to one?
-- Where do I find bugs or features to work on?
-
-These are all great questions, so to make the process a bit less daunting, let’s go through them one by one. Then, you’ll be well equipped to start contributing!
+The first two are relatively straightforward, but contributing to open source software (OSS) is a bit more opaque, especially for new developers. While the “hows” of contributing can be a bit unclear, the “whys” are much more tangible.
 
 ![Rawpixel](./fist-bump.jpg)
 
 <span className="BlogPost__image-caption">Image source <a href="https://pixabay.com/users/rawpixel-4283981/">Rawpixel</a></span>
+
+**Employers are often looking for developers who have worked on a team** before, which can be a catch-22 for new developers who have only built side projects or done freelance work by themselves. By contributing to OSS, you will learn tools teams use industry-wide to collaborate, including version control systems and platforms like GitHub.
+
+You will also gain experience in the “soft-skills” of engineering like how to communicate and collaborate with other developers. It also gives you an opportunity to give back to the community and help others who are earlier in their developer journey, much like you were before.
+
+**Open source projects provide an opportunity for developers to learn skills that will make them more employable.** Here’s how you can get started!
 
 ### Why contribute to open source?
 
@@ -35,7 +35,7 @@ All great opportunities! Now, let’s talk about how to get started!
 
 ### How do I find an open source project?
 
-In my opinion, this can be the hardest part of OSS. There are tons of projects out there that are currently being worked on, but how do you know which one is the right one for you? There are a few small ways you can make the search a bit easier.
+Figuring out where to start is hard. There are tons of projects out there that are currently being worked on, but how do you know which one is the right one for you? There are a few small ways you can make the search a bit easier.
 
 First off, I’d recommend looking at repositories for tools you use on a daily basis. This will give you an advantage because you will be more familiar with the product, what it’s intended to do, and how it can be improved.
 
