@@ -21,7 +21,7 @@ function BlogPostFooter() {
         </p>
         <p className="BlogPostFooter__about">
           Front end developer with back end tendencies. Film student turned
-          engineer. Still learning.
+          engineer. Always learning.
         </p>
         <p className="BlogPostFooter__about">
           <TwitterIcon className="BlogPostFooter__icon" />
