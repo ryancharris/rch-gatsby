@@ -45,7 +45,13 @@ function Nav(props) {
       );
     } else {
       return (
-        <a key="cv" className="Nav__link" href={item.to}>
+        <a
+          key="cv"
+          className="Nav__link"
+          href={item.to}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {item.text}
         </a>
       );
