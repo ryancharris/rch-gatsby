@@ -6,6 +6,16 @@ export const SpeakingTypes = {
 export const speakingExperience = [
   {
     type: SpeakingTypes.MEETUP,
+    date: "May 2019",
+    description:
+      "A Reactadelphia workshop focused on data loading in React components using the open data source An API of Fire & Ice.",
+    title: "A Workshop of Fire & Ice",
+    link: "https://www.meetup.com/Reactadelphia/",
+    location: "Philadelphia, PA",
+    deck: "https://codesandbox.io/s/stupefied-river-3usq1",
+  },
+  {
+    type: SpeakingTypes.MEETUP,
     date: "Feb. 2019",
     description:
       "30 minute Gatsby crash course presented at the Red Queen & Guru React meetup in February 2019.",
