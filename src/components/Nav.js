@@ -22,7 +22,7 @@ const navItems = [
   },
   {
     to:
-      "https://drive.google.com/file/d/1zTY0vrnMq3LwRO2bdBR3D0lpsk9N9KQ4/view?usp=sharing",
+      "https://drive.google.com/file/d/1joX-QIjbxRCIjYSVVXPFdlf24vhWBxXD/view?usp=sharing",
     text: "C.V.",
     type: "EXTERNAL",
   },
