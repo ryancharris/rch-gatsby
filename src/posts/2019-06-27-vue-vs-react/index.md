@@ -7,8 +7,6 @@ attachments:
   - "./two-monitors.jpg"
 ---
 
-\*\* _Originally [published](https://blog.logrocket.com/5-vue-tips-for-react-developers/) on [LogRocket](https://logrocket.com/)_
-
 For frontend developers, JavaScript frameworks have become increasingly important due to how fundamentally they change the way we approach building our applications. While not everyone uses them professional, or at all, the development community sure loves to talk about them. Unfortunately, these discussions often devolve into a diatribe about Framework X being better than Framework Y, or Framework Z not being “real JavaScript.”
 
 As an engineer, I have always found it strange to think of one framework as “better” than another when they’re really all flavors of the same. Essentially, these tools are all trying to solve the same problems and improve the developer experience; they just take different approaches.
@@ -354,3 +352,5 @@ Here are some other thoughts I had after going through this process:
 1. I prefer working with React. Admittedly, this is most likely due to my past experience and familiarity with it, but I do prefer its HTML-in-JavaScript approach to Vue’s template-based one.
 2. I think Vue would be easier for developers coming from a traditional MVC background to pick up due to its similarity to templates.
 3. I would love to try building with Vue at a larger scale in order to really get a feel for it. So far, I am loving Single-File Components!
+
+\*\* _Originally [published](https://blog.logrocket.com/5-vue-tips-for-react-developers/) on [LogRocket](https://logrocket.com/)_
